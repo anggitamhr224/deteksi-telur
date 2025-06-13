@@ -6,7 +6,7 @@ from ultralytics import YOLO
 st.set_page_config(page_title="Deteksi Telur", layout="centered", initial_sidebar_state="expanded")
 
 # Load model YOLO
-model = YOLO("yolov8_model/best.pt")  # Ganti path sesuai lokasi model kamu
+model = YOLO("best.pt")  # Ganti path sesuai lokasi model kamu
 
 # Menu navigasi
 menu = st.sidebar.radio("Pilih Menu", ("Definisi", "Kriteria Foto Telur", "Deteksi Telur"))
